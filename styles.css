@@ -402,9 +402,9 @@ min-height: 200px;
 .box-main {
   border-radius: 10px;
   position: relative;
-  height: 180px;
+  height: 200px;
   border-width: 5px;
-  width: 30.8%;
+  width: 40.8%;
   opacity: 0.86;
   padding: .5rem 2%;
   margin-top: 40px;
@@ -501,6 +501,13 @@ hieght :30px
 }
 #four-box-main{
     background-color: #FC6001;
+	display : none
+}
+#fife-box-main{
+    background-color:powderblue;
+}
+#first-box-main1{
+    background-color: #FE3094;
 	display : none
 }
 #second-box-main2{
