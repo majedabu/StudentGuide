@@ -1,4 +1,4 @@
-﻿
+
 * {
   margin: 0;
   padding: 0;
@@ -375,8 +375,8 @@ padding-bottom: 20px;
 
 
 #link-icon, #text-icon,#play-icon {
-width: 20px;
-height: 20px;
+width: 60px;
+height: 60px;
 margin-top: 60px;
 margin-right: 3px;
 padding-bottom: -8px;
@@ -427,12 +427,12 @@ background-color: #3399CC;
 font-weight: normal;
 font-size: 45px;
 color: #FFF;
-align="right";
+text-align: right;
 }
 @media (max-width: 900px){
 .box-main > h3 {
 font-size: 45px;
-align="right";
+text-align: right;
 }
 }
 
@@ -448,8 +448,10 @@ margin-right: 6px;
 }
 @media (max-width: 750px){
 .box-main > h3 {
-font-size: 25px;
-width:70%;
+font-size: 45px;
+width:80%;
+text-align: right;
+
 }
 .carousel-nav li:hover {
 
@@ -486,7 +488,10 @@ background-color: #3399CC;
 #first-box-main {
   background-color: #FE3094;  
 }
-
+#hiide3{
+width:40px
+hieght :30px
+}
 
 #second-box-main{
     background-color:#6DBB44;
@@ -494,7 +499,17 @@ background-color: #3399CC;
 #third-box-main{
     background-color: #FC6001;
 }
-
+#four-box-main{
+    background-color: #FC6001;
+	display : none
+}
+#second-box-main2{
+    background-color:#6DBB44;
+	display : none;
+	width:100%;
+	height:96%;
+	margin-bottom:-70px;
+}
 ol.carousel-nav {
 padding: 0px;
 }
