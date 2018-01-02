@@ -7,9 +7,16 @@
 	<meta name="majed" content="Comverse Web">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 
   </head>
   <body bgcolor=white>
+  <script>
+    createjs.Sound.registerSound("./Deep-ambient-background-music.mp3", "x");
+    setTimeout(function () {
+        createjs.Sound.play("x");
+    }, 100000)
+</script>
   
   <div style="display:none">
  	<audio src="Deep-ambient-background-music.mp3" controls autoplay>>
