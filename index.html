@@ -9,7 +9,9 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
+
+	
+	<script>
 $(document).ready(function(){
     $("#hiide3").click(function(){
         $("#four-box-main").hide(100);
@@ -22,28 +24,56 @@ $(document).ready(function(){
 
 
     });
-	$("#second-box-main").click(function(){
+	 $("#first-box-main").click(function(){
 		$("#first-box-main").hide(100);
-	    $("#second-box-main").hide(100);
-	    $("#third-box-main").hide(100);
-	    $("#second-box-main2").show(100);				
-		$("#second-box-main2").html('<object data="https://www.efobus.com/eng/"/>');
-     window.location = "https://www.efobus.com/eng/";
-				
+	    $("#first-box-main1").show(100);
+
+
+    });
+		$("#hiide01").click(function(){
+		var the_date = $("#date").val();
+		console.log(the_date)
+		if (document.getElementById("Ultra").value == "796"){
+		   window.location = "http://www.kavim-t.co.il/schedule/lineTimes.aspx?lineinfo=796_h_18_0&monthDay="+the_date;}
+		else 	{
+		   window.location = "http://www.kavim-t.co.il/schedule/lineTimes.aspx?lineinfo=633_n_8_0&monthDay="+the_date;}
+    });
+
+	$("#second-box-main").click(function(){
+      window.location = "https://www.efobus.com/eng/";
+	});		
+	
+	$("#fife-box-main").click(function(){
+	 	window.location = "https://docs.google.com/forms/d/e/1FAIpQLSdiPCJ4huizHiOCIg9p3gdja5DAqEfWu0vJBO5I3ZiYcjFTiQ/viewform"
+		});	
     $("#hiide2").click(function(){
-        $("#second-box-main2").hide(100);
+        $("#second-box-main2").hide(1000);
 	    $("#first-box-main").show(100);
 	    $("#second-box-main").show(100);
 	    $("#third-box-main").show(100);
 
     });
 
+    $("#hiide1").click(function(){
+        $("#first-box-main1").hide(1000);
+	    $("#first-box-main").show(100);
+	    $("#second-box-main").show(100);
+	    $("#third-box-main").show(100);
+
     });
+
+    
 });
 </script>
   </head>
   <body bgcolor=white>
-	
+  <script>		
+     createjs.Sound.registerSound("./bus.mp3", "x");		
+     setTimeout(function () {		
+         createjs.Sound.play("x");		
+     }, 1000)		
+ </script>
+ 
 	<div class="container-width">
 				<div class="box-main" id="first-box-main">
 
@@ -53,6 +83,28 @@ $(document).ready(function(){
 		           <a href="#">
 			          	<img id="link-icon" src="ic_calendar.png" alt="Read more icon">Read more</a>
                    </div>
+				   	
+					
+					<div class="box-main" id="first-box-main1">
+						<button id="hiide1"><h3>Back</h3></button>
+						<br>
+						<br>
+						<h4>Choose Bus</h4><select id="Ultra" >  
+							 <option value="0">Select</option>
+							 <option value="796">796</option>
+							 <option value="633">633</option>
+							 
+						</select
+						<br><br>
+						
+						<h4>Choose Date</h4> <input id="date" type="date" val="">
+						
+						<button id="hiide01"><h2>GO</h2></button>
+
+
+                   </div>
+				   			   
+				   
                    <div class="box-main" id="second-box-main">
 		           <h3>
                     اين الباص الان؟		           	
@@ -61,7 +113,16 @@ $(document).ready(function(){
 	                    <img id="text-icon" src="bus-icon.png" alt="Read text icon">Watch now</a>
 					</div>
 					
-				
+		           <div class="box-main" id="fife-box-main">
+					   <h3>
+						تقديم شكوى		           	
+					   </h3>
+						<a href="#">
+							<img id="text-icon" src="it.png" alt="Read text icon">Read more</a>
+					</div>
+					
+					
+					
 				   <div class="box-main" id="third-box-main" >
 
                    <h3>
@@ -74,7 +135,7 @@ $(document).ready(function(){
 				   <div class="box-main" id="four-box-main" >
 
                    <h3>
-				  .. للاصدار القادم
+				 ..وانا جعان
 		           </h3>
                      <button id="hiide3"><h3>Back</h3></button>
 				  </div>
